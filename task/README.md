@@ -1,16 +1,21 @@
-# Advertising Sales Prediction using Multiple Linear Regression
+# 📈 Advertising Sales Prediction using Multiple Linear Regression
 
 An end-to-end Machine Learning project predicting product sales based on advertising expenditures across Television (TV), Radio, and Newspaper channels using Multiple Linear Regression (MLR).
 
 ---
 
-## 📌 Project Overview
-A consumer goods company invests advertising budgets across three primary marketing media:
-1. **TV**
-2. **Radio**
-3. **Newspaper**
+## 🎯 Objective
+The primary objective of this project is to model the linear relationship between advertising expenditures across three marketing channels (TV, Radio, and Newspaper) and overall product sales volume. By quantifying channel coefficients and return on investment (ROI), the model helps business leadership optimize their marketing budget allocation and forecast future revenue with high predictive accuracy.
 
-The goal is to determine the impact of each advertising channel on sales volume, quantify per-dollar efficiency, forecast sales for a planned marketing budget, and deliver actionable marketing recommendations.
+---
+
+## 🛠️ Technologies Used
+- **Programming Language:** Python 3.x
+- **Data Manipulation & Analysis:** Pandas, NumPy
+- **Machine Learning & Modeling:** Scikit-Learn (`LinearRegression`, `train_test_split`, `metrics`)
+- **Evaluation Metrics:** R² Score, Mean Absolute Error (MAE), Mean Squared Error (MSE), Root Mean Squared Error (RMSE)
+- **Data Visualization:** Matplotlib, Seaborn
+- **Environment:** Jupyter Notebook / VS Code
 
 ---
 
@@ -59,7 +64,7 @@ $$\text{Sales} = 4.7141 + 0.0545 \times \text{TV} + 0.1009 \times \text{Radio} +
 ## 📊 Visualizations Included
 * **Graph 1 — Feature Spend vs. Sales (EDA):** 3-panel scatter plot with trendlines illustrating individual channel effects.
 * **Graph 2 — Actual vs. Predicted Scatter Plot:** Demonstrates high model fit along the 45-degree reference line ($y = x$).
-* **Graph 3 — Sorted Actual vs. Predicted Comparison:** Orderly bar chart in Navy Blue and Emerald Mint comparing actual vs. predicted sales across all test samples.
+* **Graph 3 — Sorted Actual vs. Predicted Comparison:** Orderly bar chart comparing actual vs. predicted sales across all test samples.
 
 ---
 
@@ -77,20 +82,3 @@ $$\text{Sales} = 4.7141 + 0.0545 \times \text{TV} + 0.1009 \times \text{Radio} +
 Install the required Python packages:
 ```bash
 pip install pandas numpy matplotlib scikit-learn
-```
-
-### Running the Notebook
-Open the notebook in VS Code or Jupyter:
-```bash
-jupyter notebook Advertising_Sales_Prediction_Multiple_Linear_Regression.ipynb
-```
-Select **Restart Kernel and Run All Cells**.
-
----
-
-## 📁 Repository Structure
-```text
-├── Advertising_Sales_Prediction_Multiple_Linear_Regression.ipynb   # Main Jupyter Notebook
-├── advertising.csv                                                  # Dataset
-└── README.md                                                        # Project Documentation
-```
